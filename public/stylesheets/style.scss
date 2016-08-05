@@ -1,0 +1,68 @@
+@import url(https://fonts.googleapis.com/css?family=PT+Sans);
+/* * * FONT * * * /
+$body-font: 'PT Sans', Helvetica, sans-serif;
+
+/* * * COLORS * * */
+$light: 	#DDDDDD;
+$dark: 		#1A212C;
+$highlight: #DEDBA7; // yellow
+$no: 		#D13F32; // red
+$kinda-no: 	#E89A72;	// pale red
+$kinda-yes: #76B085; // pale green
+$yes: 		#2A7856; // green
+
+
+body{
+ 	font-family: 'PT Sans', Helvetica, sans-serif;
+ 	font-size: 12pt;
+}
+.table {
+	display:flex;
+	flex-wrap:wrap;
+	margin: 2em;
+	padding: 0;
+}
+.h-row,
+.row{
+	display:flex;
+	width:100%;
+	justify-content:space-around;
+}
+.h-cell,
+.cell{
+	display:flex;
+	align-items:center;
+	padding:10px;
+	width:20%;
+	border-bottom: 1px solid $light;
+}
+.h-row,
+.h-cell{
+	text-align: center;
+	background-color: $light;
+}
+.s-row{
+	width:100%;
+	display:flex;
+	justify-content:space-between;
+}
+.s-cell{
+	display:flex;
+	margin:4px;
+	padding:10px;
+	border: .5px solid $light;
+	font-weight: bold;
+}
+.s-cell:hover{
+	background-color:#DEDBA7;
+	color:white;
+	border: .5px solid #DEDBA7;
+}
+.arrow-down {
+  width: 0; 
+  height: 0; 
+  border-left: 8px solid transparent;
+  border-right: 8px solid transparent;
+  border-top: 8px solid black;
+}
+
